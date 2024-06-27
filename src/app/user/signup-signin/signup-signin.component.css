@@ -1,0 +1,118 @@
+.main{
+    background-color: #C4C4C4;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 80%;
+    width: 90%;
+    min-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.left-image{
+    height: 90%;
+    width: 45%;
+    border-radius: 30px;
+}
+
+.right-section{
+    height: 90%;
+    width: 45%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+   
+
+}
+
+.Form{
+    padding: 5px;
+    /* height: 50%; */
+    /* background-color: red; */
+    width: 65%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Form h3{
+    font-weight: 700;
+}
+
+.haveAccount{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Form a{
+
+    font-size: 1vw;
+    align-items: center;
+
+}
+
+.form-control{
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+
+
+.btn-primary{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #76DE37;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    color: black;
+}
+
+.btn-primary:hover{
+  scale: 1.02;
+  background-color: #59ad24;
+}
+
+@media (max-width:1200px)
+{
+    .container{
+        flex-direction: column;
+        /* background-color: red; */
+        height: 190vh;
+        
+    }
+
+    .main{
+        height: 200vh;
+    }
+
+    .left-image{
+        height: 45%;
+        
+      
+    }
+    
+    .right-section{
+        height: 45%;
+
+    }
+}
+
