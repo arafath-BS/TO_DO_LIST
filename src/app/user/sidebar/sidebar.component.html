@@ -1,0 +1,108 @@
+<nav class="sidebar" [ngClass]="{ close: toggle }">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <h2>Menu</h2>
+        </span>
+      </div>
+
+      <i class="ri-menu-line" (click)="onClickToggle()"></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <li class="search-box" >
+          <i class="ri-search-line icon"></i>
+          <input type="text" placeholder="Search..." />
+        </li>
+
+        <ul class="menu-links">
+          <h2>Task</h2>
+          <li class="nav-link">
+            <a routerLink="upcoming">
+              <i class="ri-arrow-right-double-line icon"></i>
+              <span class="text nav-text">Upcoming</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a routerLink="today">
+              <i class="ri-menu-fold-4-fill icon"></i>
+              <span class="text nav-text">Today</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="ri-calendar-todo-line icon"></i>
+              <span class="text nav-text">Calender</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="ri-sticky-note-line icon"></i>
+              <span class="text nav-text">Sticky Wall</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-links">
+          <h2>Lists</h2>
+          <li class="nav-link">
+            <a class="bag">
+              <i
+                class="ri-checkbox-blank-circle-fill icon"
+                style="color: red"
+              ></i>
+              <span class="text nav-text">Work</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a class="bag">
+              <i
+                class="ri-checkbox-blank-circle-fill icon"
+                style="color: rgb(0, 255, 38)"
+              ></i>
+
+              <span class="text nav-text">Personal</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a class="bag">
+              <i
+                class="ri-checkbox-blank-circle-fill icon"
+                style="color: rgb(76, 0, 255)"
+              ></i>
+
+              <span class="text nav-text">Study</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a>
+              <i class="ri-add-circle-line icon"></i>
+              <span class="text nav-text">Add New List</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="">
+          <a>
+            <i class="icon ri-list-settings-line"></i>
+            <span class="text nav-text">Setting</span>
+          </a>
+        </li>
+
+        <li class="">
+          <a routerLink="/">
+            <i class="ri-logout-box-r-line icon"></i>
+            <span class="text nav-text" >Sign out</span>
+          </a>
+        </li>
+      </div>
+    </div>
+  </nav>
